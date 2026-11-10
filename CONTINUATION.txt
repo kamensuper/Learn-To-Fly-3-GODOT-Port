@@ -1,0 +1,9 @@
+Continuation checkpoint
+- OriginalFlight.cs now captures after Finish and FramePostDraw. Built twice successfully, zero warnings/errors.
+- Visually inspected flight-abort-preview.png: rocket remains visible, exhaust absent. Render + abort + test-save run passed twice.
+- Rocket now shares craft angle and craft-center pivot, remains visible while engine cut if stages remain. These branches still need live steering/cutoff verification.
+- Nape free-flight oracle error 0; contact comparison error 0.022545844871274312 remains unresolved. Do not relax tolerance.
+- Original stock-reference captive AIR launches but Steam init fails and OK exits. Its namespace is local.codex.ltf3.stockreference2. Do not enable Steam saves without isolating actual Steam cloud file APIs.
+- GoGy footage https://www.youtube.com/watch?v=dW0UjgkRuqU located, NOT watched. Use browser to inspect frames.
+- Full menu/shop/flight/results/progression integration remains incomplete.
+- Next actions: play steer/cut/abort branches on latest binary; inspect original footage; diagnose per-tick contact divergence; wire source-derived equipment/reward/save loop.
